@@ -4,16 +4,19 @@ div.wrapper {
   contain: paint;
 }
 
-$email-bottom: 50px;
+$email-bottom: 60px;
 $button-margin-top: 50px;
 $animation-duration: .5s;
 
-p.email {
+input.email {
   color: $default-color;
+  background-color: $secondary-color;
+  border: none;
+
   position: absolute;
   bottom: $email-bottom;
   left: 0;
-
+  z-index: -1;
   animation: email-float $animation-duration;
 }
 

@@ -1,0 +1,59 @@
+@import 'colors';
+
+div.wrapper {
+  contain: paint;
+}
+
+$email-bottom: 50px;
+$button-margin-top: 50px;
+$animation-duration: .5s;
+
+p.email {
+  color: $default-color;
+  position: absolute;
+  bottom: $email-bottom;
+  left: 0;
+
+  animation: email-float $animation-duration;
+}
+
+@keyframes email-float {
+  from { bottom: 0; }
+  to { bottom: $email-bottom; }
+}
+
+.button-animation {
+  margin-top: $button-margin-top;
+  animation: float-down $animation-duration;
+}
+
+@keyframes float-down {
+  from { margin-top: 0; }
+  to { margin-top: $button-margin-top; }
+}
+
+.email-button-enter {
+  opacity: 0;
+}
+
+.email-button-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.email-button-exit {
+  opacity: 1;
+}
+
+.email-button-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+p.button-text {
+  display: inline;
+}
+
+button {
+  width: 120px;
+}

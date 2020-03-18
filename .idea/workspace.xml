@@ -5,10 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CVButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/CV.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EmailButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Email.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectsButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Github.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/EmailButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/EmailButton.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CV.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/CV.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Github.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Github.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/Github.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Github.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="SCSS File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -87,6 +86,7 @@
       <workItem from="1584480037597" duration="1125000" />
       <workItem from="1584481176951" duration="8482000" />
       <workItem from="1584525037121" duration="8499000" />
+      <workItem from="1584563589559" duration="4323000" />
     </task>
     <servers />
   </component>

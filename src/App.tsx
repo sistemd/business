@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Email from './Email'
 import CV from './CV'
 import Github from './Github'

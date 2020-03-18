@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react'
 import Button from './Button'
-import ReactModal from 'react-modal'
+import Modal from './Modal'
+import Popover from 'react-tiny-popover'
 import './css/Github.scss'
 import 'devicon/devicon-colors.css'
 import 'devicon/devicon.min.css'
 import axios from 'axios'
-
-const notableProjects: readonly string[] = []
+import HoverPopover from './HoverPopover'
 
 export default function Github() {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,10 +19,10 @@ export default function Github() {
     return (
         <>
             <Button onClick={() => setIsOpen(true)}>GITHUB</Button>
-            <ReactModal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
+            <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
                 <BriefDescription/>
                 <NotableProjectsList projects={projects}/>
-            </ReactModal>
+            </Modal>
         </>
     )
 }
@@ -63,17 +63,21 @@ function BriefDescription() {
 }
 
 function NotableProjectsList({projects}: { projects: readonly GithubProject[] }) {
+
     return (
-        <ul>
+        <div>
             {projects.map(project => (
-                <li key={project.name} className="project-row">
-                    <a target="_blank" href={project.url}>
+                <HoverPopover
+                    key={project.name} className="project"
+                    content={<p>{project.description}</p>} position="right"
+                >
+                    <a rel="noopener noreferrer" target="_blank" href={project.url}>
                         <LanguageIcon language={project.language}/>
                         {project.name}
                     </a>
-                </li>
+                </HoverPopover>
             ))}
-        </ul>
+        </div>
     )
 }
 

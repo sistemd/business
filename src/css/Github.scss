@@ -1,0 +1,8 @@
+.project {
+  width: max-content;
+  transition: transform 300ms ease-out;
+}
+
+.project:hover {
+  transform: scale(1.2) translateX(8%);
+}

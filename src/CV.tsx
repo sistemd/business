@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import ReactModal from 'react-modal'
 import Button from './Button'
+import Modal from './Modal'
 
 export default function CV() {
     const [isOpen, setIsOpen] = useState(false)
@@ -8,9 +8,9 @@ export default function CV() {
     return (
         <>
             <Button onClick={() => setIsOpen(true)}>CV</Button>
-            <ReactModal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
+            <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
                 <CVContent/>
-            </ReactModal>
+            </Modal>
         </>
     )
 }

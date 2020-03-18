@@ -5,7 +5,7 @@ import {CSSTransition, SwitchTransition} from 'react-transition-group'
 
 const buttonAnimationTimeout = 200
 
-export default function EmailButton() {
+export default function Email() {
     const [showEmail, setShowEmail] = useState(false)
     const emailInputRef = useRef<HTMLInputElement>(null)
 
@@ -34,7 +34,7 @@ interface CopyEmailButtonProps {
 
 function CopyEmailButton(props: CopyEmailButtonProps) {
     const copyText = 'COPY'
-    const doneText = 'DONE'
+    const doneText = '\u2713'
 
     const [emailCopied, setCopied] = useState(false)
     const text = emailCopied ? doneText : copyText
@@ -49,10 +49,10 @@ function CopyEmailButton(props: CopyEmailButtonProps) {
     }
 
     return (
-        <Button disabled={emailCopied} className="button-animation" onClick={onButtonClick}>
+        <Button onClick={onButtonClick}>
             <SwitchTransition>
-                <CSSTransition appear timeout={buttonAnimationTimeout} key={text} classNames="email-button">
-                    <p className="button-text">{text}</p>
+                <CSSTransition appear timeout={buttonAnimationTimeout} key={text} classNames="copy-button">
+                    <p className={'copy-button-text'}>{text}</p>
                 </CSSTransition>
             </SwitchTransition>
         </Button>

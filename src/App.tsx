@@ -8,10 +8,6 @@ export default function App() {
     const [selectedButton, setSelectedButton] = useState<ButtonName | undefined>()
 
     return (
-        <Github />
-    )
-
-    return (
         <div>
             <Menu className={selectedButton ? 'top-menu' : 'center-menu'} onSelectedButtonChange={setSelectedButton}/>
             <MainContent selectedButton={selectedButton}/>

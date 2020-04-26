@@ -9,14 +9,13 @@
 }
 
 .menu {
-    transition: all .5s;
+    transition: all 1.5s;
     position: relative;
     margin: auto auto;
 }
 
 .center-menu {
     margin-top: 23vh;
-    transform: scale(1.1);
 }
 
 .top-menu {

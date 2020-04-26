@@ -18,6 +18,7 @@ export default function Menu(props: MenuProps) {
     })
 
     function onClick(button: ButtonName) {
+        resetMenuAnimationDelay()
         props.onSelectedButtonChange(button)
         setClasses({
             ...classes,
@@ -41,4 +42,11 @@ export default function Menu(props: MenuProps) {
             <Button text='Github' onClick={() => onClick('github')} className={classes['github']}/>
         </div>
     )
+}
+
+function resetMenuAnimationDelay() {
+    const style = (document.querySelector(':root') as any).style
+    setTimeout(() => {
+        style.setProperty('--menu-button-animation-delay', 0)
+    }, style.getPropertyValue('--menu-button-animation-delay'))
 }

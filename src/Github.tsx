@@ -33,30 +33,72 @@ function NotableProjectsList() {
 
     return (
         <div>
-            {notableProjects.map(project => <Project {...project} />)}
+            {notableProjects.map(project => <Project key={project.name} {...project} />)}
         </div>
     )
 }
 
 function Project(props: { name: string, language: string, description: string }) {
-    const [hovered, setHovered] = useState(false)
+    const [currentText, setCurrentText] = useState('')
+    const [expectedText, setExpectedText] = useState('')
+    const [showCursor, setShowCursor] = useState(false)
+
+    useEffect(() => {
+        // TODO Use requestAnimationFrame with randomness
+        const id = setInterval(() => {
+            if (currentText === expectedText)
+                return
+
+            if (currentText.length > expectedText.length) {
+                setShowCursor(true)
+                setCurrentText(t => t.substr(0, t.length - 1))
+                return
+            }
+
+            if (currentText.length < expectedText.length) {
+                setShowCursor(true)
+                setCurrentText(t => t + expectedText[currentText.length])
+                return
+            }
+        }, 35)
+
+        return () => clearInterval(id)
+    }, [currentText, expectedText])
+
+    useEffect(() => {
+        const id = setInterval(() => {
+            if (currentText === '' && expectedText === '') {
+                setShowCursor(false)
+                return
+            }
+
+            if (currentText !== expectedText) {
+                setShowCursor(true)
+                return
+            }
+
+            setShowCursor(s => !s)
+        }, 300)
+
+        return () => clearInterval(id)
+    }, [currentText, expectedText])
 
     function onMouseEnter() {
-        setHovered(true)
+        setExpectedText(`${props.description} written in ${props.language}`)
     }
 
     function onMouseLeave() {
-        setHovered(false)
+        setExpectedText('')
     }
 
     return (
-        <div className='project' key={props.name}>
+        <div className='project'>
             <a className='project-title' rel="noopener noreferrer" target="_blank"
                href={githubUrl(props.name)} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                 {props.name}
             </a>
-            <div className={'project-details ' + (hovered ? 'hovered' : '')}>
-                <p>{props.language} | {props.description}</p>
+            <div className='project-details'>
+                <p>{currentText}{showCursor && '|'}</p>
             </div>
         </div>
     )

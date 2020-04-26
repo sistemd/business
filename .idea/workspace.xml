@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="89ff4726-ea15-4b80-9753-a4b0791a0c03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/CV.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/CV.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Email.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/Email.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/Github.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/Github.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/Menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../src/css/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/css/Menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/../src/css/Menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +90,7 @@
       <workItem from="1584563589559" duration="4323000" />
       <workItem from="1584964816112" duration="1314000" />
       <workItem from="1587912151250" duration="196000" />
-      <workItem from="1587912367200" duration="9908000" />
+      <workItem from="1587912367200" duration="15398000" />
     </task>
     <servers />
   </component>
@@ -109,6 +106,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="588" y="214" width="800" height="677" key="#SCSS/67.27.1853.1053@67.27.1853.1053" timestamp="1584446692733" />
+    <state x="235" y="27" width="944" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587926173486">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="235" y="27" width="944" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1299.741@67.27.1299.741" timestamp="1587926173486" />
     <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587913081969">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -134,10 +135,10 @@
     </state>
     <state x="481" y="186" width="672" height="677" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1587920415989" />
     <state x="657" y="253" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1584465805829" />
-    <state x="480" y="189" width="672" height="160" key="search.everywhere.popup" timestamp="1587920021768">
+    <state x="480" y="189" width="672" height="160" key="search.everywhere.popup" timestamp="1587924403626">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="480" y="189" width="672" height="160" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1587920021768" />
+    <state x="480" y="189" width="672" height="160" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1587924403626" />
     <state x="656" y="257" width="672" height="160" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1584465086394" />
   </component>
 </project>

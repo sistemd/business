@@ -1,0 +1,27 @@
+.project-title {
+    width: max-content;
+}
+
+.project {
+    display: flex;
+}
+
+.project-details {
+    font-size: .5em;
+}
+
+.project-details p {
+    margin: 0.75em 0 0 1.4em;
+}
+
+.project-details {
+    transform-origin: left;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: all .3s;
+}
+
+.project-details.hovered {
+    transform: scaleY(1);
+    opacity: 1;
+}

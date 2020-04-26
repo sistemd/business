@@ -1,30 +1,11 @@
 import React, {RefObject, useRef, useState} from 'react'
 import Button from './Button'
-import './css/EmailButton.scss'
 import {CSSTransition, SwitchTransition} from 'react-transition-group'
 
 const buttonAnimationTimeout = 200
 
 export default function Email() {
-    const [showEmail, setShowEmail] = useState(false)
-    const emailInputRef = useRef<HTMLInputElement>(null)
-
-    const email = 'bz.ennm@gmail.com'
-
-    const showEmailButton = (
-        <Button onClick={() => setShowEmail(true)}>
-            EMAIL
-        </Button>
-    )
-
-    const copyEmailButton = <CopyEmailButton email={email} emailInputRef={emailInputRef}/>
-
-    return (
-        <div className="wrapper">
-            {showEmail ? copyEmailButton : showEmailButton}
-            {showEmail && <input className="email" value={email} readOnly ref={emailInputRef}/>}
-        </div>
-    )
+    return <></>
 }
 
 interface CopyEmailButtonProps {
@@ -49,13 +30,8 @@ function CopyEmailButton(props: CopyEmailButtonProps) {
     }
 
     return (
-        <Button onClick={onButtonClick}>
-            <SwitchTransition>
-                <CSSTransition appear timeout={buttonAnimationTimeout} key={text} classNames="copy-button">
-                    <p className={'copy-button-text'}>{text}</p>
-                </CSSTransition>
-            </SwitchTransition>
-        </Button>
+        <>
+        </>
     )
 }
 

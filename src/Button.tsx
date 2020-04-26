@@ -1,18 +1,14 @@
 import React from 'react'
-import './css/Button.scss'
+import './css/Button.css'
 
 export interface ButtonProps {
-    children: React.ReactNode
+    text: string
     className?: string
-    disabled?: boolean
-
-    onClick(): void
+    onClick?(): void
 }
 
 export default function Button(props: ButtonProps) {
     return (
-        <button disabled={props.disabled} onClick={props.onClick} className={props.className || ''}>
-            {props.children}
-        </button>
+        <p onClick={props.onClick} className={'button ' + (props.className || '')}>{props.text}</p>
     )
 }

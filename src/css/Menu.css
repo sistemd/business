@@ -1,0 +1,29 @@
+:root {
+    --menu-button-width: 5rem;
+}
+
+.menu {
+    width: calc(var(--menu-button-width) * 3.6);
+}
+
+.menu > .button {
+    width: var(--menu-button-width);
+    transition: all .3s;
+    position: absolute;
+}
+
+.left {
+    left: 5%;
+}
+
+.center {
+    left: 36%;
+}
+
+.large {
+    transform: scale(1.5);
+}
+
+.right {
+    left: 70%;
+}

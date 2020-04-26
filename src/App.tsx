@@ -1,15 +1,13 @@
-import React from 'react'
-import Email from './Email'
-import CV from './CV'
-import Github from './Github'
-import './css/App.scss'
+import React, {useState} from 'react'
+import Menu from './Menu'
+import './css/App.css'
 
 export default function App() {
+    const [selection, setSelection] = useState('')
+
     return (
-        <div className="outer-container">
-            <Email/>
-            <CV/>
-            <Github/>
+        <div>
+            <Menu className={(selection === '') ? 'center-menu' : 'top-menu'} onSelectionChange={setSelection}/>
         </div>
     )
 }

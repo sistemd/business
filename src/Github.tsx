@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import Button from './Button'
-import Modal from './Modal'
 import Popover from 'react-tiny-popover'
 import './css/Github.scss'
 import 'devicon/devicon-colors.css'
@@ -18,11 +17,8 @@ export default function Github() {
 
     return (
         <>
-            <Button onClick={() => setIsOpen(true)}>GITHUB</Button>
-            <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
-                <BriefDescription/>
-                <NotableProjectsList projects={projects}/>
-            </Modal>
+            <BriefDescription/>
+            <NotableProjectsList projects={projects}/>
         </>
     )
 }
@@ -63,7 +59,6 @@ function BriefDescription() {
 }
 
 function NotableProjectsList({projects}: { projects: readonly GithubProject[] }) {
-
     return (
         <div>
             {projects.map(project => (

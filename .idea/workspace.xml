@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89ff4726-ea15-4b80-9753-a4b0791a0c03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/CV.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/CV.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Email.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/Email.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Github.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/Github.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Modal.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/css/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../src/css/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/css/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../src/css/Button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/css/EmailButton.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/css/Github.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/css/_colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/Menu.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +87,7 @@
       <workItem from="1584563589559" duration="4323000" />
       <workItem from="1584964816112" duration="1314000" />
       <workItem from="1587912151250" duration="196000" />
-      <workItem from="1587912367200" duration="6337000" />
+      <workItem from="1587912367200" duration="7130000" />
     </task>
     <servers />
   </component>

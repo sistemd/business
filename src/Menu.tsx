@@ -2,48 +2,43 @@ import React, {useState} from 'react'
 import Button from './Button'
 import './css/Menu.css'
 
+export type ButtonName = 'email' | 'cv' | 'github'
+
 export interface MenuProps {
     className?: string
-    onSelectionChange(newSelection: string): void
+
+    onSelectionChange(newSelection: ButtonName): void
 }
 
 export default function Menu(props: MenuProps) {
-    const [emailClass, setEmailClass] = useState('left')
-    const [cvClass, setCvClass] = useState('center')
-    const [githubClass, setGithubClass] = useState('right')
+    const [classes, setClasses] = useState({
+        email: 'left',
+        cv: 'center',
+        github: 'right',
+    })
 
-    function onEmailClick() {
-        setEmailClass('center large')
-        setCenterButtonClass(emailClass)
-        props.onSelectionChange('email')
+    function onClick(button: ButtonName) {
+        props.onSelectionChange(button)
+        setClasses({
+            ...classes,
+            [button]: 'center large',
+            [currentCenterButton()]: (classes[button] === 'center') ? 'center large' : classes[button],
+        })
     }
 
-    function onCvClick() {
-        setCvClass('center large')
-        setCenterButtonClass(cvClass)
-        props.onSelectionChange('cv')
-    }
-
-    function onGithubClick() {
-        setGithubClass('center large')
-        setCenterButtonClass(githubClass)
-        props.onSelectionChange('github')
-    }
-
-    function setCenterButtonClass(newClass: string) {
-        if (emailClass.includes('center'))
-            setEmailClass(newClass)
-        else if (cvClass.includes('center'))
-            setCvClass(newClass)
-        else if (githubClass.includes('center'))
-            setGithubClass(newClass)
+    function currentCenterButton(): ButtonName {
+        for (const [k, v] of Object.entries(classes)) {
+            if (v.includes('center'))
+                return k as ButtonName
+        }
+        return 'cv'
     }
 
     return (
         <div className={'menu ' + (props.className || '')}>
-            <Button text='Email' onClick={onEmailClick} className={emailClass}/>
-            <Button text='CV' onClick={onCvClick} className={cvClass}/>
-            <Button text='Github' onClick={onGithubClick} className={githubClass}/>
+            <Button text='Email' onClick={() => onClick('email')} className={classes['email']}/>
+            <Button text='CV' onClick={() => onClick('cv')} className={classes['cv']}/>
+            <Button text='Github' onClick={() => onClick('github')} className={classes['github']}/>
         </div>
     )
 }

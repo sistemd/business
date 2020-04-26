@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Button from './Button'
 import Popover from 'react-tiny-popover'
-import './css/Github.scss'
 import 'devicon/devicon-colors.css'
 import 'devicon/devicon.min.css'
 import axios from 'axios'

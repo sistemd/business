@@ -4,6 +4,8 @@
 
 .menu {
     width: calc(var(--menu-button-width) * 3.6);
+    height: 2.7em;
+    border-bottom: .15em solid black;
 }
 
 .menu > .button {

@@ -1,5 +1,11 @@
 :root {
-    font: 1em "Fira Code";
+    font: 2em "Fira Code";
+}
+
+@media (max-width: 662px) {
+    :root {
+        font-size: 1em;
+    }
 }
 
 .menu {

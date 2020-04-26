@@ -7,7 +7,7 @@ export type ButtonName = 'email' | 'cv' | 'github'
 export interface MenuProps {
     className?: string
 
-    onSelectionChange(newSelection: ButtonName): void
+    onSelectedButtonChange(newButton: ButtonName): void
 }
 
 export default function Menu(props: MenuProps) {
@@ -18,7 +18,7 @@ export default function Menu(props: MenuProps) {
     })
 
     function onClick(button: ButtonName) {
-        props.onSelectionChange(button)
+        props.onSelectedButtonChange(button)
         setClasses({
             ...classes,
             [button]: 'center large',

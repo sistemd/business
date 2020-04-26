@@ -1,13 +1,15 @@
 import React, {useState} from 'react'
-import Menu from './Menu'
+import Menu, {ButtonName} from './Menu'
 import './css/App.css'
+import MainContent from './MainContent'
 
 export default function App() {
-    const [selection, setSelection] = useState('')
+    const [selectedButton, setSelectedButton] = useState<ButtonName | undefined>()
 
     return (
         <div>
-            <Menu className={(selection === '') ? 'center-menu' : 'top-menu'} onSelectionChange={setSelection}/>
+            <Menu className={selectedButton ? 'top-menu' : 'center-menu'} onSelectedButtonChange={setSelectedButton}/>
+            <MainContent selectedButton={selectedButton}/>
         </div>
     )
 }

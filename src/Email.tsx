@@ -5,7 +5,7 @@ import {CSSTransition, SwitchTransition} from 'react-transition-group'
 const buttonAnimationTimeout = 200
 
 export default function Email() {
-    return <></>
+    return <p>Email</p>
 }
 
 interface CopyEmailButtonProps {

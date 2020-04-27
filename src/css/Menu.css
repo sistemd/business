@@ -10,7 +10,7 @@
 
 .menu > .button {
     width: var(--menu-button-width);
-    transition: all .3s;
+    transition: all .8s;
     position: absolute;
 }
 

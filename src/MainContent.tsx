@@ -13,9 +13,12 @@ export interface MainContentProps {
 export default function MainContent(props: MainContentProps) {
     function Content() {
         switch (props.selectedButton) {
-            case 'email': return <Email/>
-            case 'cv': return <CV/>
-            case 'github': return <Github/>
+            case 'email':
+                return <Email/>
+            case 'cv':
+                return <CV/>
+            case 'github':
+                return <Github/>
         }
 
         return <></>
@@ -24,7 +27,9 @@ export default function MainContent(props: MainContentProps) {
     return (
         <SwitchTransition mode='out-in'>
             <CSSTransition key={props.selectedButton} timeout={200} classNames={'fade'}>
-                <Content/>
+                <div className='content'>
+                    <Content/>
+                </div>
             </CSSTransition>
         </SwitchTransition>
     )

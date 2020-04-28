@@ -1,0 +1,48 @@
+.email {
+    display: flex;
+    font-size: 1.2em;
+    margin-top: .65em;
+}
+
+.copy-button-wrapper {
+    position: relative;
+    overflow: visible;
+}
+
+.copy-button {
+    margin: 0 0 0 .5em;
+}
+
+.copy-button:hover {
+    cursor: pointer;
+}
+
+.copied-floating-text {
+    position: absolute;
+    animation: float-up 1s;
+    opacity: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+@keyframes float-up {
+    from {
+        opacity: 0.8;
+        bottom: 0.1em;
+    }
+
+    to {
+        opacity: 0;
+        bottom: 1em;
+    }
+}
+
+a.email-link {
+    margin: 0;
+    color: black;
+}
+
+.email-input {
+    position: absolute;
+    transform: scale(0);
+}

@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Menu, {ButtonName} from './Menu'
-import './css/App.css'
 import MainContent from './MainContent'
+import './css/App.css'
 
 export default function App() {
     const [selectedButton, setSelectedButton] = useState<ButtonName | undefined>()

@@ -37,9 +37,9 @@ export default function Menu(props: MenuProps) {
 
     return (
         <div className={'menu ' + (props.className || '')}>
-            <Button text='Email' onClick={() => onClick('email')} className={classes['email']}/>
-            <Button text='CV' onClick={() => onClick('cv')} className={classes['cv']}/>
-            <Button text='Github' onClick={() => onClick('github')} className={classes['github']}/>
+            <Button id='email' text='Email' onClick={() => onClick('email')} className={classes['email']}/>
+            <Button id='cv' text='CV' onClick={() => onClick('cv')} className={classes['cv']}/>
+            <Button id='github' text='Github' onClick={() => onClick('github')} className={classes['github']}/>
         </div>
     )
 }

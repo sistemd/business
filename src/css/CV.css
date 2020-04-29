@@ -1,0 +1,16 @@
+.cv {
+    margin: .5em 3em;
+    text-align: justify;
+}
+
+.send-me-email {
+    font: inherit;
+    color: inherit;
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+}
+
+.send-me-email:hover {
+    cursor: pointer;
+}

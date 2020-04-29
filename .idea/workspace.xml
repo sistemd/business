@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89ff4726-ea15-4b80-9753-a4b0791a0c03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/CV.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/CV.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/Menu.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="89ff4726-ea15-4b80-9753-a4b0791a0c03" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +87,7 @@
       <workItem from="1587912367200" duration="20563000" />
       <workItem from="1588013951066" duration="5810000" />
       <workItem from="1588060181205" duration="7978000" />
-      <workItem from="1588169812944" duration="7343000" />
+      <workItem from="1588169812944" duration="7841000" />
     </task>
     <servers />
   </component>

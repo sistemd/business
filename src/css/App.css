@@ -1,5 +1,20 @@
 :root {
+    --foreground-color: #EC9720;
+    --main-background-color: rgba(32, 31, 29, 1);
+    --gradient-background-color: #401C10;
+    --gradient-opacity: 0.7;
+}
+
+p, a, div {
+    color: var(--foreground-color);
+    border-color: var(--foreground-color);
+}
+
+:root {
     font: 2em "Fira Code";
+    width: 100vw;
+    height: 100vh;
+    background: var(--main-background-color);
 }
 
 @media (max-width: 662px) {
@@ -20,4 +35,7 @@
 
 .top-menu {
     margin-top: 8vh;
+}
+
+body {
 }

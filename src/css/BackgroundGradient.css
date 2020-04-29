@@ -1,0 +1,10 @@
+.background-gradient {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, var(--gradient-background-color) 50%, transparent) no-repeat;
+    transition: transform 1s;
+    z-index: -1;
+}

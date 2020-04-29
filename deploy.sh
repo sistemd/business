@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 yarn build
-cp -r build/**/**/* ./
+cp build/index.html ./

@@ -4,7 +4,6 @@ import './css/Github.css'
 export default function Github() {
     return (
         <>
-            <BriefDescription/>
             <NotableProjectsList/>
         </>
     )
@@ -17,10 +16,6 @@ interface GithubProject {
     language: string
 }
 
-function BriefDescription() {
-    return <></>
-}
-
 function NotableProjectsList() {
     const notableProjects = [
         {name: 'physics-pancake', language: 'JS', description: 'A 2D physics simulation'},
@@ -29,6 +24,7 @@ function NotableProjectsList() {
         {name: 'gameboy', language: 'C++', description: 'A snake and tetris clone'},
         {name: 'nes-emulator', language: 'C++', description: 'An unfinished NES emulator'},
         {name: 'pic16-tetris', language: 'C', description: 'PIC microcontroller tetris'},
+        {name: 'checkers', language: 'Rust and TypeScript', description: 'A simple checkers multiplayer game for the browser'},
     ]
 
     return (

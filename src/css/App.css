@@ -11,7 +11,7 @@ p, a, div {
 }
 
 :root {
-    font: 2em "Fira Code";
+    font: 2em "Fira Code", monospace;
     width: 100vw;
     height: 100vh;
     background: var(--main-background-color);

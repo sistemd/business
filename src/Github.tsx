@@ -1,4 +1,5 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
+import ExternalLink from "./ExternalLink"
 import './css/Github.css'
 
 export default function Github() {
@@ -10,7 +11,6 @@ export default function Github() {
 }
 
 interface GithubProject {
-    url: string
     name: string
     description: string
     language: string
@@ -34,13 +34,13 @@ function NotableProjectsList() {
     )
 }
 
-function Project(props: { name: string, language: string, description: string }) {
+function Project(props: GithubProject) {
     return (
         <div className='project'>
-            <a className='project-link' rel="noopener noreferrer" target="_blank" href={githubUrl(props.name)}>
+            <ExternalLink className='project-link' href={githubUrl(props.name)}>
                 <p className='project-title'>{props.name}</p>
                 <p className='project-details'>— {props.description} written in {props.language}</p>
-            </a>
+            </ExternalLink>
         </div>
     )
 }

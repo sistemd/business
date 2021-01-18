@@ -52,6 +52,12 @@ export default function CV() {
             out the <button onClick={() => click('#github')} className='link-button'>Github tab</button>.
             <br/>
             <br/>
+            I am currently working for an outsourcing company in Serbia. Indirectly I work
+            for <ExternalLink href="https://www.embracecloud.nl/?lang=en">Embrace</ExternalLink>.
+            My day-to-day tasks include mostly ASP.NET Core and Node.js (TypeScript).
+            I also have a lot of exposure to GraphQL - the Node.js server which I maintain exposes a GraphQL interface.
+            <br/>
+            <br/>
             If you wish to work with me, please <button onClick={() => click('#email')} className='link-button'>
             send me an email</button>.
         </p>
